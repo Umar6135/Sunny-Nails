@@ -212,14 +212,13 @@ tabTogglers.forEach(function (toggler) {
 
 
 
-
-
-
 document.querySelectorAll('.accordion-header').forEach(header => {
   header.addEventListener('click', () => {
     const body = header.nextElementSibling;
     const icon = header.querySelector('.accordion-icon');
+    
     body.classList.toggle('hidden');
     icon.classList.toggle('rotate-90');
+    header.classList.toggle('active'); // <- Toggle 'active' class on header
   });
 });

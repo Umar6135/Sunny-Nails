@@ -14,7 +14,7 @@
     <title>Document</title>
 </head>
 
-<body class="bg-primary font-montserrat">
+<body class="bg-primary font-montserrat relative ">
     <!-- header  -->
     <header class="bg-primary py-6">
         <div class="container">
@@ -83,9 +83,10 @@
                     </ul>
 
                 </div>
-                <div class="p-[5.2px] bg-transparent rounded-[50%] ml-[35px] border border-secondary">
+                <a class="p-[5.2px] bg-transparent rounded-[50%] ml-[35px] border border-secondary hover:bg-darkyellow transition"
+                    href="">
                     <img src="./assets/img/profile-circle.png" alt="">
-                </div>
+                </a>
             </nav>
         </div>
     </header>
@@ -103,7 +104,7 @@
                     <a href="" class="theme-btn">Book an Appointment <span><img src="./assets/img/theme-btn-icon.svg"
                                 alt=""></span></a>
                     <a href=""
-                        class="theme-btn bg-transparent border-1 border-black pt-[16px] pb-[16.4px] px-[26px]">View
+                        class="theme-btn bg-transparent hover:bg-[#F1E3BE] border-1 border-black pt-[16px] pb-[16.4px] px-[26px]">View
                         Services</a>
                 </div>
             </div>
@@ -116,19 +117,20 @@
                 <img src="./assets/img/carousal-img.png" class="w-full min-h-[610px] object-cover" />
             </div>
             <div class="">
-                <img src="./assets/img/carousal-img.png" class="w-full min-h-[610px] object-cover" />
+                <img src="./assets/img/carousal-img2.png" class="w-full min-h-[610px] object-cover" />
             </div>
             <div class="">
-                <img src="./assets/img/carousal-img.png" class="w-full min-h-[610px] object-cover" />
+                <img src="./assets/img/carousal-img3.png" class="w-full min-h-[610px] object-cover" />
             </div>
         </div>
 
-        <div class="flex gap-1 py-3.5 px-5 right-[59px] bottom-[70px] z-10 bg-white rounded-[500px] justify-center items-center absolute w-[106px] h-[50px]">
+        <div
+            class="flex gap-1 py-3.5 px-5 right-[59px] bottom-[70px] z-10 bg-white rounded-[500px] justify-center items-center absolute w-[106px] h-[50px]">
             <div>
                 <img src="./assets/img/message.png" alt="">
             </div>
             <a href="">
-            <h6 class="text-base font-semibold text-secondary leading-none">Chat</h6>
+                <h6 class="text-base font-semibold text-secondary leading-none">Chat</h6>
             </a>
         </div>
         <!-- Prev/Next Buttons -->
@@ -141,7 +143,7 @@
                 <path d="M0.698486 0.994507L10.598 10.894L0.698486 20.7935" stroke="white" stroke-width="2" />
             </svg>
         </button>
-       
+
 
 
     </div>
@@ -219,11 +221,30 @@
                 <div id="All" class="">
                     <div class="grid grid-cols-2 gap-5">
                         <div class="grid grid-cols-2 grid-rows-2 gap-5">
-                            <div class="relative">
+                            <div class="relative overflow-hidden gallery-card">
                                 <img src="./assets/img/gallery-1.png" alt="">
                                 <div class="absolute bottom-4 left-4">
                                     <a href=""
                                         class="text-sm font-medium font-montserrat  text-secondary leading-[1.22] block py-2.5 px-[15px] rounded-[50px] bg-white">I
+                                        want this</a>
+                                </div>
+                                <div
+                                    class="absolute gallery-card-info w-full top-0 cursor-pointer -z-10  opacity-0  h-full rounded-[10px] bg-darkyellow pt-6 pr-6 pl-4 pb-4">
+                                    <h6 class="text-xl font-medium text-secondary leading-[1.5] mb-[49px]">File Manicure
+                                        + Wraps + Thin Gel Polish Layer</h6>
+                                    <p class="text-base font-medium leading-[1.5] text-secondary mb-2.5">Price: 75 SGD
+                                    </p>
+                                    <p class="text-base font-medium leading-[1.5] text-secondary mb-2.5">Master: Ann
+                                        Ivanova</p>
+                                    <p
+                                        class="flex text-sm  font-medium leading-[1.2] text-secondary gap-1 items-center mb-[17px]">
+                                        <span class="flex">
+                                            <img src="./assets/img/light-star.png" alt="">
+                                            <img src="./assets/img/light-star.png" alt=""> <img
+                                                src="./assets/img/light-star.png" alt="">
+                                        </span>(Sunny Inferno)</p>
+                                    <a href=""
+                                        class="text-sm font-medium font-montserrat w-fit  text-secondary leading-[1.22] block py-2.5 px-[15px] rounded-[50px] bg-white">I
                                         want this</a>
                                 </div>
                             </div>
@@ -243,23 +264,55 @@
                                         want this</a>
                                 </div>
                             </div>
-                            <div class="relative">
+                            <div class="relative  overflow-hidden gallery-card">
                                 <img src="./assets/img/gallery-4.png" alt="">
                                 <div class="absolute bottom-4 left-4">
                                     <a href=""
                                         class="text-sm font-medium font-montserrat  text-secondary leading-[1.22] block py-2.5 px-[15px] rounded-[50px] bg-white">I
+                                        want this</a>
+                                </div>
+                                <div
+                                    class="absolute gallery-card-info w-full top-0 cursor-pointer -z-10  opacity-0  h-full rounded-[10px] bg-darkyellow pt-6 pr-6 pl-4 pb-4">
+                                    <h6 class="text-xl font-medium text-secondary leading-[1.5] mb-[49px]">File Manicure + Wraps + Thin Gel Polish Layer</h6>
+                                    <p class="text-base font-medium leading-[1.5] text-secondary mb-2.5">Price: 75 SGD </p>
+                                    <p class="text-base font-medium leading-[1.5] text-secondary mb-2.5">Master: Ann Ivanova</p>
+                                    <p
+                                        class="flex text-sm  font-medium leading-[1.2] text-secondary gap-1 items-center mb-[17px]">
+                                        <span class="flex">
+                                            <img src="./assets/img/light-star.png" alt="">
+                                            <img src="./assets/img/light-star.png" alt=""> <img
+                                                src="./assets/img/light-star.png" alt="">
+                                        </span>(Sunny Inferno)</p>
+                                    <a href=""
+                                        class="text-sm font-medium font-montserrat w-fit  text-secondary leading-[1.22] block py-2.5 px-[15px] rounded-[50px] bg-white">I
                                         want this</a>
                                 </div>
                             </div>
                         </div>
                         <div>
-                            <div class="relative">
-                                <img src="./assets/img/gallery-4.png" alt="">
+                            <div class="relative   overflow-hidden gallery-card">
+                                <img src="./assets/img/gallery-5.jpg" alt="">
                                 <div class="absolute bottom-4 left-4">
                                     <a href=""
                                         class="text-sm font-medium font-montserrat  text-secondary leading-[1.22] block py-2.5 px-[15px] rounded-[50px] bg-white">I
                                         want this</a>
                                 </div>
+                                <div
+                                class="absolute gallery-card-info w-full top-0 cursor-pointer -z-10 opacity-0 flex flex-col justify-center  h-full rounded-[10px] bg-darkyellow pt-6 pr-6 pl-4 pb-4">
+                                <h6 class="text-[38px] font-medium text-secondary leading-[1.5] mb-6 max-w-[80%]">File Manicure + Wraps + Thin Gel Polish Layer</h6>
+                                <p class="text-base font-medium leading-[1.5] text-secondary mb-2.5">Price: 75 SGD </p>
+                                <p class="text-base font-medium leading-[1.5] text-secondary mb-2.5">Master: Ann Ivanova</p>
+                                <p
+                                    class="flex text-sm  font-medium leading-[1.2] text-secondary gap-1 items-center mb-[17px]">
+                                    <span class="flex">
+                                        <img src="./assets/img/light-star.png" alt="">
+                                        <img src="./assets/img/light-star.png" alt=""> <img
+                                            src="./assets/img/light-star.png" alt="">
+                                    </span>(Sunny Inferno)</p>
+                                <a href=""
+                                    class="text-sm font-medium absolute bottom-4 left-4 font-montserrat w-fit  text-secondary leading-[1.22] block py-2.5 px-[15px] rounded-[50px] bg-white">I
+                                    want this</a>
+                            </div>
                             </div>
                         </div>
                     </div>
@@ -583,13 +636,14 @@
                 <div class="mb-6 border-b border-[#85754F4D]">
                     <button class="accordion-header w-full pb-6 flex justify-between items-center">
                         <h4
-                            class="text-[45px] text-secondary font-montserrat font-normal leading-tight flex items-center">
+                            class="text-[45px]  text-secondary hover:text-darkyellow font-montserrat font-normal  leading-tight flex items-center">
                             <span
-                                class="text-xl font-normal font-montserrat leading-tight text-secondary mr-[74px]">/01</span>
+                                class="text-xl  font-normal font-montserrat leading-tight mr-[74px]">/01</span>
                             Women’s Manicure
                         </h4>
                         <img src="./assets/img/arrow-down-outline.png"
-                            class="accordion-icon w-12 h-12 transform transition-transform duration-200" alt="">
+                            class="accordion-icon w-12 h-12 transform transition-transform duration-200  cursor-pointer"
+                            alt="">
 
                     </button>
                     <div class="accordion-body px-4 py-2 text-secondary text-2xl p-5 pl-0 hidden">
@@ -602,13 +656,14 @@
                 <div class="mb-6 border-b border-[#85754F4D]">
                     <button class="accordion-header w-full pb-6 flex justify-between items-center">
                         <h4
-                            class="text-[45px] text-secondary font-montserrat font-normal leading-[1.23] flex items-center">
+                            class="text-[45px]  text-secondary hover:text-darkyellow font-montserrat font-normal  leading-tight flex items-center">
                             <span
-                                class="text-xl font-normal font-montserrat leading-tight text-secondary mr-[74px]">/02</span>
+                                class="text-xl font-normal font-montserrat leading-tight mr-[74px]">/02</span>
                             Corrections & Extensions
                         </h4>
                         <img src="./assets/img/arrow-down-outline.png"
-                            class="accordion-icon w-12 h-12 transform transition-transform duration-200" alt="">
+                            class="accordion-icon w-12 h-12 transform transition-transform duration-200 cursor-pointer"
+                            alt="">
 
                     </button>
                     <div class="accordion-body px-4 py-2 text-secondary text-2xl p-5 pl-0 hidden">
@@ -623,13 +678,14 @@
                 <div class="mb-6 border-b border-[#85754F4D]">
                     <button class="accordion-header w-full pb-6 flex justify-between items-center">
                         <h4
-                            class="text-[45px] text-secondary font-montserrat font-normal leading-[1.23] flex items-center">
+                            class="text-[45px]  text-secondary hover:text-darkyellow font-montserrat font-normal  leading-tight flex items-center">
                             <span
-                                class="text-xl font-normal font-montserrat leading-tight text-secondary mr-[74px]">/03</span>
+                                class="text-xl font-normal font-montserrat leading-tight mr-[74px]">/03</span>
                             Women’s Pedicure
                         </h4>
                         <img src="./assets/img/arrow-down-outline.png"
-                            class="accordion-icon w-12 h-12 transform transition-transform duration-200" alt="">
+                            class="accordion-icon w-12 h-12 transform transition-transform duration-200 cursor-pointer"
+                            alt="">
 
                     </button>
                     <div class="accordion-body px-4 py-2 text-secondary text-2xl p-5 pl-0 hidden">
@@ -645,13 +701,14 @@
                 <div class="mb-6 border-b border-[#85754F4D]">
                     <button class="accordion-header w-full pb-6 flex justify-between items-center">
                         <h4
-                            class="text-[45px] text-secondary font-montserrat font-normal leading-[1.23] flex items-center">
+                            class="text-[45px]  text-secondary hover:text-darkyellow font-montserrat font-normal  leading-tight flex items-center">
                             <span
-                                class="text-xl font-normal font-montserrat leading-tight text-secondary mr-[74px]">/04</span>
+                                class="text-xl font-normal font-montserrat leading-tight mr-[74px]">/04</span>
                             Men’s Services
                         </h4>
                         <img src="./assets/img/arrow-down-outline.png"
-                            class="accordion-icon w-12 h-12 transform transition-transform duration-200" alt="">
+                            class="accordion-icon w-12 h-12 transform transition-transform duration-200 cursor-pointer"
+                            alt="">
 
                     </button>
                     <div class="accordion-body px-4 py-2 text-secondary text-2xl p-5 pl-0 hidden">
@@ -667,13 +724,14 @@
                 <div class="mb-6 border-b border-[#85754F4D]">
                     <button class="accordion-header w-full pb-6 flex justify-between items-center">
                         <h4
-                            class="text-[45px] text-secondary font-montserrat font-normal leading-[1.23] flex items-center">
+                            class="text-[45px]  text-secondary hover:text-darkyellow font-montserrat font-normal  leading-tight flex items-center">
                             <span
-                                class="text-xl font-normal font-montserrat leading-tight text-secondary mr-[74px]">/05</span>
+                                class="text-xl font-normal font-montserrat leading-tight mr-[74px]">/05</span>
                             Kids’ Services
                         </h4>
                         <img src="./assets/img/arrow-down-outline.png"
-                            class="accordion-icon w-12 h-12 transform transition-transform duration-200" alt="">
+                            class="accordion-icon w-12 h-12 transform transition-transform duration-200 cursor-pointer"
+                            alt="">
 
                     </button>
                     <div class="accordion-body px-4 py-2 text-secondary text-2xl p-5 pl-0 hidden">
@@ -687,13 +745,14 @@
                 <div class=" border-b border-[#85754F4D]">
                     <button class="accordion-header w-full pb-6 flex justify-between items-center">
                         <h4
-                            class="text-[45px] text-secondary font-montserrat font-normal leading-[1.23] flex items-center">
+                            class="text-[45px]  text-secondary hover:text-darkyellow font-montserrat font-normal  leading-tight flex items-center">
                             <span
-                                class="text-xl font-normal font-montserrat leading-tight text-secondary mr-[74px]">/05</span>
+                                class="text-xl font-normal font-montserrat leading-tight mr-[74px]">/05</span>
                             Nail Art & Add-ons
                         </h4>
                         <img src="./assets/img/arrow-down-outline.png"
-                            class="accordion-icon w-12 h-12 transform transition-transform duration-200" alt="">
+                            class="accordion-icon w-12 h-12 transform transition-transform duration-200 cursor-pointer"
+                            alt="">
 
                     </button>
                     <div class="accordion-body px-4 py-2 text-secondary text-2xl p-5 pl-0 hidden">
@@ -742,7 +801,7 @@
                             class="text-sm font-medium text-secondary w-[211px] py-[11px] placeholder:text-secondary focus-visible:outline-0 border-b border-[#302F3480]">
                     </div>
                     <div>
-                        <input type="number" placeholder="Phone"
+                        <input type="text" placeholder="Phone"
                             class="text-sm font-medium text-secondary w-[211px] py-[11px] placeholder:text-secondary focus-visible:outline-0 border-b border-[#302F3480]">
                     </div>
                     <div class="flex items-center gap-[9px] w-[346px]">
@@ -776,7 +835,7 @@
             <!-- Slides Wrapper -->
             <div id="talented-carousal" class="owl-carousel">
 
-                <div class="slider-wrapper w-[433px]">
+                <div class="slider-wrapper !w-[433px]">
                     <div id="" class="owl-carousel talented-item-slider">
                         <div class="">
                             <img src="./assets/img/tC-main1.png" class="w-full object-cover" />
@@ -855,7 +914,7 @@
 
 
                 </div>
-                <div class="slider-wrapper w-[433px]">
+                <div class="slider-wrapper !w-[433px]">
                     <div id="" class="owl-carousel talented-item-slider">
                         <div class="">
                             <img src="./assets/img/tC-main2.png" class="w-full object-cover" />
@@ -933,7 +992,7 @@
 
 
                 </div>
-                <div class="slider-wrapper w-[433px]">
+                <div class="slider-wrapper !w-[433px]">
                     <div id="" class="owl-carousel talented-item-slider">
                         <div class="">
                             <img src="./assets/img/tC-main3.png" class="w-full object-cover" />
@@ -1057,11 +1116,16 @@
                         <div
                             class="bg-white py-[72px] px-[25px] rounded-[20px] w-[439px] h-[265px] relative before:content-[''] before:absolute before:left-[5%] before:bottom-[-29px] before:-translate-y-1/2 before:w-[29px] before:h-[19px] before:bg-[url('../assets/img/review-arrow.png')] before:bg-no-repeat before:bg-contain">
                             <div class="flex mb-[22px] gap-1">
-                                <img src="./assets/img/star.png" class="!w-[23px] h-[22px]" alt="" width="26" height="23">
-                                <img src="./assets/img/star.png" class="!w-[23px] h-[22px]" alt="" width="26" height="23">
-                                <img src="./assets/img/star.png" class="!w-[23px] h-[22px]" alt="" width="26" height="23">
-                                <img src="./assets/img/star.png" class="!w-[23px] h-[22px]" alt="" width="26" height="23">
-                                <img src="./assets/img/star.png" class="!w-[23px] h-[22px]" alt="" width="26" height="23">
+                                <img src="./assets/img/star.png" class="!w-[23px] h-[22px]" alt="" width="26"
+                                    height="23">
+                                <img src="./assets/img/star.png" class="!w-[23px] h-[22px]" alt="" width="26"
+                                    height="23">
+                                <img src="./assets/img/star.png" class="!w-[23px] h-[22px]" alt="" width="26"
+                                    height="23">
+                                <img src="./assets/img/star.png" class="!w-[23px] h-[22px]" alt="" width="26"
+                                    height="23">
+                                <img src="./assets/img/star.png" class="!w-[23px] h-[22px]" alt="" width="26"
+                                    height="23">
                             </div>
                             <p class="text-base text-secondary font-medium font-montserrat leading-tight">I had an
                                 amazing
@@ -1082,11 +1146,16 @@
                         <div
                             class=" bg-white py-[72px] px-[25px] rounded-[20px] w-[439px] h-[265px] relative before:content-[''] before:absolute before:left-[5%] before:bottom-[-29px] before:-translate-y-1/2 before:w-[29px] before:h-[19px] before:bg-[url('../assets/img/review-arrow.png')] before:bg-no-repeat before:bg-contain">
                             <div class="flex mb-[22px] gap-1">
-                                <img src="./assets/img/star.png" class="!w-[23px] h-[22px]" alt="" width="26" height="23">
-                                <img src="./assets/img/star.png" class="!w-[23px] h-[22px]" alt="" width="26" height="23">
-                                <img src="./assets/img/star.png" class="!w-[23px] h-[22px]" alt="" width="26" height="23">
-                                <img src="./assets/img/star.png" class="!w-[23px] h-[22px]" alt="" width="26" height="23">
-                                <img src="./assets/img/star.png" class="!w-[23px] h-[22px]" alt="" width="26" height="23">
+                                <img src="./assets/img/star.png" class="!w-[23px] h-[22px]" alt="" width="26"
+                                    height="23">
+                                <img src="./assets/img/star.png" class="!w-[23px] h-[22px]" alt="" width="26"
+                                    height="23">
+                                <img src="./assets/img/star.png" class="!w-[23px] h-[22px]" alt="" width="26"
+                                    height="23">
+                                <img src="./assets/img/star.png" class="!w-[23px] h-[22px]" alt="" width="26"
+                                    height="23">
+                                <img src="./assets/img/star.png" class="!w-[23px] h-[22px]" alt="" width="26"
+                                    height="23">
                             </div>
                             <p class="text-base text-secondary font-medium font-montserrat leading-tight">My nails look
                                 amazing — clean, polished, and long-lasting</p>
@@ -1105,11 +1174,16 @@
                         <div
                             class="bg-white py-[72px] px-[25px] rounded-[20px] w-[439px] h-[265px] relative before:content-[''] before:absolute before:left-[5%] before:bottom-[-29px] before:-translate-y-1/2 before:w-[29px] before:h-[19px] before:bg-[url('../assets/img/review-arrow.png')] before:bg-no-repeat before:bg-contain">
                             <div class="flex mb-[22px] gap-1">
-                                <img src="./assets/img/star.png" class="!w-[23px] h-[22px]" alt="" width="26" height="23">
-                                <img src="./assets/img/star.png" class="!w-[23px] h-[22px]" alt="" width="26" height="23">
-                                <img src="./assets/img/star.png" class="!w-[23px] h-[22px]" alt="" width="26" height="23">
-                                <img src="./assets/img/star.png" class="!w-[23px] h-[22px]" alt="" width="26" height="23">
-                                <img src="./assets/img/star.png" class="!w-[23px] h-[22px]" alt="" width="26" height="23">
+                                <img src="./assets/img/star.png" class="!w-[23px] h-[22px]" alt="" width="26"
+                                    height="23">
+                                <img src="./assets/img/star.png" class="!w-[23px] h-[22px]" alt="" width="26"
+                                    height="23">
+                                <img src="./assets/img/star.png" class="!w-[23px] h-[22px]" alt="" width="26"
+                                    height="23">
+                                <img src="./assets/img/star.png" class="!w-[23px] h-[22px]" alt="" width="26"
+                                    height="23">
+                                <img src="./assets/img/star.png" class="!w-[23px] h-[22px]" alt="" width="26"
+                                    height="23">
                             </div>
                             <p class="text-base text-secondary font-medium font-montserrat leading-tight">Great
                                 attention
@@ -1301,6 +1375,21 @@
 
         </div>
     </footer>
+    <div class="overlay fixed inset-0 flex items-center justify-center bg-primary z-[9999] lg:hidden">
+        <div class="text-center px-6">
+          <!-- Icon -->
+          <div class="flex justify-center mb-6">
+           <img src="./assets/img/logo.png" class="w-[346px]" alt="">
+          </div>
+      
+          <!-- Message -->
+          <h1 class="text-4xl font-semibold text-darkyellow mb-4">Desktop View Required</h1>
+          <p class="text-lg text-gray-700">
+            For the best experience, please open this website on a desktop device.
+          </p>
+        </div>
+      </div>
+      
     <!-- jQuery and Owl Carousel JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>

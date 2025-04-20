@@ -7,8 +7,9 @@ export default {
         primary: "#F7F1E0",
         secondary: "#302F34",
         darkyellow: "#FDC41F",
+        darkyellow200: "#EEB614",
       },
-      fontSize:{
+      fontSize: {
 
         heading: '65px',
       },
@@ -53,10 +54,20 @@ export default {
         },
         '.pill-btn.active': {
           backgroundColor: theme('colors.darkyellow'),
-        border: "0",
+          border: "0",
+        },
+        ".gallery-card:hover .gallery-card-info": {
+          opacity: "1",
+          zIndex: "1",
         },
 
-       
+
+        ".gallery-card-info": {
+          transition: "all 0.3s ease-in-out",
+        },
+        ".accordion-header.active h4": {
+          color: theme('colors.darkyellow'),
+        },
         '.theme-btn': {
           display: 'flex',
           backgroundColor: theme('colors.darkyellow'),
@@ -68,13 +79,17 @@ export default {
           fontSize: '14px',
           fontWeight: '400',
           color: theme('colors.secondary'),
+          transition: "0.3s",
+        },
+        '.theme-btn:hover': {
+          backgroundColor: theme('colors.darkyellow200'),
         },
         '.theme-btn span': {
           marginLeft: '18px',
         },
         '.theme-btn img': {
           width: 'auto',
-          height: 'auto', 
+          height: 'auto',
         },
         '.owl-dots': {
           position: "absolute",
@@ -92,7 +107,7 @@ export default {
         '.owl-dots button.active': {
           backgroundColor: "#FDC41F !important",
         },
-   
+
       });
     },
   ],
