@@ -63,7 +63,7 @@ export default {
 
 
         ".gallery-card-info": {
-          transition: "all 0.3s ease-in-out",
+          transition: "all 1s cubic-bezier(0.4, 0, 0.2, 1)",
         },
         ".accordion-header.active h4": {
           color: theme('colors.darkyellow'),
